@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Halogen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="wrapper">
+		<div class="header-text">
+			<p class="main-text">the slim fit jean - $68</p>
+			<p class="sub-text">traditional retail: $140</p>
+		</div>
+
+		<div class="size-btns">
+			<button class="size-btn" id="small" onclick=activeColorAll(small)>S</button>
+			<button class="size-btn" id="medium" onclick=activeColorAll(medium)>M</button>
+			<button class="size-btn" id="large" onclick=activeColorAll(large)>L</button>
+		</div>	
+			
+		<div class="add-to-btn-place">
+			<button class="add-to-btn" id="addBtn">add to bag</button>
+		</div>	
+
+		<div class="thumbnails">
+			<img src="1.jpg" class="thumb one" id="1" onmouseover="showImage('1.jpg')">
+			<img src="2.jpg" class="thumb two" id="2" onmouseover="showImage('2.jpg')">
+			<img src="3.jpg" class="thumb three" id="3" onmouseover="showImage('3.jpg')">
+			<img src="4.jpg" class="thumb four" id="4" onmouseover="showImage('4.jpg')">
+			<img src="5.jpg" class="thumb five" id="5" onmouseover="showImage('5.jpg')">
+		</div>
+
+		<div class="large-image" id="active-image">
+			<img src = "1.jpg" class="main" id="active-image">	
+		</div>	
+	</div>
+</div><!--end of container-->
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
